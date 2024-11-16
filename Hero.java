@@ -1,24 +1,28 @@
-public class Hero{
-    public static void main(String[] args){
-        
-        String heroName = "Super-Girl";
-        String heroName2 = "Spider-Man";
-        String heroName3 = "Super-Man";
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Comparator;
 
-        int powerLevel;
-        powerLevel = 100;
-        System.out.println("power Level = " + powerLevel);
-        int powerLevel2;
-        powerLevel2 = 80;
-        System.out.println("power Level  = " + powerLevel2);
-        int powerLevel3;
-        powerLevel3 = 101;
-        System.out.println("power Level = " + powerLevel3);
+public class Hero
+{ 
+    public Hero(String name, int powerLevel, String team) 
+    {
+        this.name = name;
+        this.powerLevel = powerLevel;
+        this.team = affiliation;
+    }
 
-        String heroAffiliation = "Justice League ";
-        String heroAffiliation2 = "Avengers ";
-        String heroAffiliation3 = "Justice League ";
+    public String getname(){
+        return name;
+    }
+    public int getpowerLevel(){
+        return powerLevel;
+    }
+    public String getteam(){
+        return affiliation;
+    }
 
 
+    public String toString(){
+        return "Hero Name: " + name + "\n " + "Power Level: " + powerLevel + "\n" + "Hero Affiliation: " + team;
     }
 }
