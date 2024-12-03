@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 public class Hero
 { 
-    public Hero(String name, int powerLevel, String team) 
+    public Hero(String name, int powerLevel, String team) {
     {
         this.name = name;
         this.powerLevel = powerLevel;
@@ -24,5 +24,11 @@ public class Hero
 
     public String toString(){
         return "Hero Name: " + name + "\n " + "Power Level: " + powerLevel + "\n" + "Hero Affiliation: " + team;
+    }
+
+    @Override
+    public String toString() {
+        return "Hero{name='" + name + "', powerLevel=" + powerLevel + "}";
+        }
     }
 }
